@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-2xl font-semibold;
+}
+h1.title {
+  @apply text-2xl font-semibold;
+  @apply text-blue-800 mb-2;
+}
+
+img {
+  max-height: 100%;
+}
+
+input,
+textarea,
+select {
+  @apply border-2 border-gray-200 rounded-md px-1 w-full;
+  @apply mb-2;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  @apply border-2 border-blue-500 rounded-md px-1;
+}
+
+label {
+  @apply block mb-1 text-blue-900;
+}
+.btn-primary {
+  @apply bg-blue-500 text-white rounded-md px-2 py-1;
+  @apply hover:bg-blue-600;
+}
+.btn-secondary {
+  @apply bg-gray-500 text-white rounded-md px-2 py-1;
+  @apply hover:bg-gray-600;
+}
+.btn-danger {
+  @apply bg-red-500 text-white rounded-md px-2 py-1;
+  @apply hover:bg-pink-600;
+}
+.btn-warning {
+  @apply bg-yellow-500 text-white rounded-md px-2 py-1;
+  @apply hover:bg-yellow-600;
+}
+.btn-success {
+  @apply bg-green-500 text-white rounded-md px-2 py-1;
+  @apply hover:bg-green-600;
+}
+
+table {
+  @apply border border-gray-200;
+  @apply w-full;
+  @apply mt-4;
+}
+table.basic {
+  @apply w-full mt-4;
+}
+table thead {
+  @apply bg-blue-200 border border-gray-200 px-2 py-1;
+}
+table.basic thead tr th {
+  @apply bg-blue-200 border border-gray-200 px-2 py-1;
+}
+table.basic tr td {
+  @apply border border-gray-200 px-2 py-1;
+}
+table.basic a {
+  @apply text-gray-600  px-2 py-1 hover:text-red-700 flex items-center justify-center;
+}

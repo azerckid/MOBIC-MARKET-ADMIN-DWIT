@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function Nav() {
+export default function Nav({ show }) {
   const inactiveLink = "flex gap-1 p-1";
-  const activeLink = inactiveLink + " bg-white text-blue-900 rounded-l-md";
+  const activeLink = inactiveLink + " bg-highlight text-primary rounded-md";
+  const inactiveIcon = "w-6 h-6";
+  const activeIcon = inactiveIcon + "text-primary";
   const router = useRouter();
   const { pathname } = router;
   return (
-    <aside className="text-white p-4 pr-0">
+    <aside
+      className={
+        (show ? "left-0" : "-left-full") +
+        "top-0 text-gray-500 p-4 fixed w-full bg-backgroundGray md:static md:w-auto h-screen transition-all duration-300"
+      }
+    >
       <Link href={"/"} className="flex gap-1 mb-4 mr-4 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +63,7 @@ export default function Nav() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className={pathname.includes("/orders") ? activeIcon : inactiveIcon}
           >
             <path
               strokeLinecap="round"

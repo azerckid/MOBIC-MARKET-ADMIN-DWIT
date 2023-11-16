@@ -59,13 +59,13 @@ table.basic {
   @apply w-full mt-4;
 }
 table thead {
-  @apply bg-blue-200 border border-gray-200 px-2 py-1;
+  @apply border border-gray-200 px-2 py-1 text-sm;
 }
 table.basic thead tr th {
-  @apply bg-blue-200 border border-gray-200 px-2 py-1;
+  @apply border border-gray-200 px-2 py-1;
 }
 table.basic tr td {
-  @apply border border-gray-200 px-2 py-1;
+  @apply border border-gray-200 px-2 py-1 text-sm;
 }
 table.basic a {
   @apply text-gray-600  px-2 py-1 hover:text-red-700 flex items-center justify-center;

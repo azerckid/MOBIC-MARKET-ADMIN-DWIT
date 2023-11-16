@@ -22,11 +22,11 @@ export default function Products() {
       <table className="basic">
         <thead>
           <tr>
-            <th className="">number</th>
-            <th className="">Product Name</th>
-            <th className="">Product Description</th>
-            <th className="">Product Price</th>
-            <th className="">Product Category</th>
+            <th className="">ID</th>
+            <th className="">Name</th>
+            <th className="">Description</th>
+            <th className="">Price</th>
+            <th className="">Category</th>
             <th className="">Edit</th>
             <th className="">Delete</th>
           </tr>

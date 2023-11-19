@@ -7,7 +7,7 @@ import { isAdminRequest } from "./auth/[...nextauth]";
 
 export default async function upload(req, res) {
   await mongooseConnect();
-  await isAdminRequest(req, res);
+  // await isAdminRequest(req, res);
 
   const form = new multiparty.Form();
   const { fields, files } = await new Promise((resolve, reject) => {

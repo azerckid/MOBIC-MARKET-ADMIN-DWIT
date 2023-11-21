@@ -8,7 +8,6 @@ export default function DeleteCategoryPage() {
   const [categoryInfo, setCategoryInfo] = useState({}); // [null, setCategoryInfo
   const router = useRouter();
   const { id } = router.query;
-  console.log("id", id);
 
   useEffect(() => {
     if (!id) return;
@@ -37,10 +36,10 @@ export default function DeleteCategoryPage() {
   return (
     <Layout>
       <h1 className="text-blue-800 mb-2">Delete Category</h1>
-      <p>
+      {/* <p>
         Do you sure you want to delete <b>{categoryInfo.name}</b>
         &quot;category&quot;?
-      </p>
+      </p> */}
       <div className="flex space-x-3 mt-4">
         <button onClick={deleteCategory} className="btn-primary">
           Yes

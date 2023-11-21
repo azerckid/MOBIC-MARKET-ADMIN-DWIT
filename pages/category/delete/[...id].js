@@ -35,7 +35,7 @@ export default function DeleteCategoryPage() {
 
   return (
     <Layout>
-      <h1 className="text-blue-800 mb-2">Delete Category</h1>
+      {/* <h1 className="text-blue-800 mb-2">Delete Category</h1> */}
       {/* <p>
         Do you sure you want to delete <b>{categoryInfo.name}</b>
         &quot;category&quot;?

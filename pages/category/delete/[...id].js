@@ -39,7 +39,7 @@ export default function DeleteCategoryPage() {
       <h1 className="text-blue-800 mb-2">Delete Category</h1>
       <p>
         Do you sure you want to delete <b>{categoryInfo.name}</b>
-        category?
+        &quot;category&quot;?
       </p>
       <div className="flex space-x-3 mt-4">
         <button onClick={deleteCategory} className="btn-primary">
